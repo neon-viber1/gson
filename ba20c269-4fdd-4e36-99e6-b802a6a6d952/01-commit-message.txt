@@ -1,0 +1,7 @@
+Reject null elements in AtomicIntegerArray with a JsonSyntaxException
+
+Reading "[1,null,3]" as AtomicIntegerArray leaked an IllegalStateException
+from JsonReader.nextInt(). Throw a JsonSyntaxException with the path, as the
+AtomicLongArray adapter already does.
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>

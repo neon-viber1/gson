@@ -1,0 +1,1 @@
+Reject null elements in AtomicIntegerArray with a JsonSyntaxException
